@@ -396,6 +396,17 @@ body{
 .index-catalog__info{
     padding-top: 11rem;
     max-width: 95.7rem;
+    position: relative;
+    padding-left: 4rem;
+}
+.index-catalog__info::before{
+    content: '';
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    width: 0.1rem;
+    height: 67.8rem;
+    background-color: var(--black);
 }
 .index-catalog__title{
     font-size: 12.8rem;
@@ -405,10 +416,26 @@ body{
     font-weight: 700;
     margin-bottom: 6.3rem;
 }
+.arrow-btn{
+    position: absolute;
+    right: 17rem;
+    bottom: 0rem;
+}
+.arrow-btn svg{
+    width: 11.1rem;
+    height: 9.4rem;
+}
 .yellow-catalog__text{
     color: var(--yellow);
     font-size: 18.1rem;
     line-height: 100%;
+}
+.cata-dec1{
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    width: 50rem;
+    height: 20rem;
 }
 .text-stroke{
     font-weight: 700;
