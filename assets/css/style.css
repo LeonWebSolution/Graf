@@ -16,6 +16,13 @@ body{
    --yellow: #E7CE79;
    --black: #282525;
 }
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
 .wrapper{
     min-height: 100%;
     display: flex;
@@ -381,6 +388,56 @@ body{
     top: 13rem;
     right: -1rem;
     width: 15rem !important;
+}
+.index-catalog{
+    position: relative;
+    padding-bottom: 7rem;
+}
+.index-catalog__info{
+    padding-top: 11rem;
+    max-width: 95.7rem;
+}
+.index-catalog__title{
+    font-size: 12.8rem;
+    color: var(--black);
+    line-height: 85%;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 6.3rem;
+}
+.yellow-catalog__text{
+    color: var(--yellow);
+    font-size: 18.1rem;
+    line-height: 100%;
+}
+.text-stroke{
+    font-weight: 700;
+    color: white !important;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+}
+.small{
+    font-size: 6.4rem;
+    
+    display: block;
+}
+.gallery-catalog{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 96rem;
+    height: 106rem;
+}
+.catalog-btn__big{
+    font-size: 4rem;
+    color: var(--black);
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 4rem;
+    border: 1px solid var(--black);
+}
+.catalog-btn__big span{
+    font-weight: 700;
 }
 /* main  end*/
 
