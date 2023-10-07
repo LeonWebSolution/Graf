@@ -725,6 +725,20 @@ body{
     background-color: #17171A;
     padding-bottom: 10.5rem;
 }
+.about-cloud{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 57.2rem;
+    height: 116.9rem;
+}
+.about-rec{
+    position: absolute;
+    right: 0;
+    bottom: 15rem;
+    width: 9.8;
+    height: 34.5rem;
+}
 .about-us__top{
     display: flex;
     justify-content: space-between;
@@ -753,8 +767,129 @@ body{
 .med{
     font-weight: 500;
 }
-
-
+.about-us__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.5rem;
+}
+.about-us__item{
+    width: 48rem;
+    height: 55rem;
+    border: 0.1rem solid var(--white);
+    padding: 4rem 3.5rem;
+}
+.about-us__item-img{
+    margin-bottom: 3rem;
+}
+.about-us__item-title{
+    color: var(--yellow);
+    font-size: 3.6rem;
+    line-height: 100%;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+.about-us__item-text{
+    font-size: 2.4rem;
+    color: var(--white);
+}
+.about-us__item:nth-child(1) svg{
+    width: 11.4rem;
+    height: 11.4rem;
+}
+.about-us__item:nth-child(2) svg{
+    width: 9rem;
+    height: 11.4rem;
+}
+.about-us__item:nth-child(3) svg{
+    width: 8.5rem;
+    height: 11.4rem;
+}
+.collection{
+    background-color: #17171A;
+    padding-bottom: 15rem;
+    position: relative;
+}
+.collection-dec{
+    position: absolute;
+    right: 0;
+    bottom: 15rem;
+    width: 12rem;
+    height: 20rem;
+}
+.decor-text__collection{
+    position: absolute;
+    bottom: 9rem;
+    width: 192rem;
+    height: 59.3rem;
+}
+.collection-title-b img{
+   width: 152rem;
+   text-align: center;
+   height: 20.8rem;
+}
+.collection-wrapper{
+    position: relative;
+    z-index: 7;
+}
+.collection-title-y{
+    font-size: 22rem;
+    color: var(--yellow);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -3rem;
+    position: relative;
+}
+.collection-title-y::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 64.3rem;
+    height: 0.2rem;
+    background-color: var(--white);
+}
+.collection-title-w{
+    font-size: 22rem;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -3rem;
+    text-align: right;
+    position: relative;
+}
+.collection-title-w::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 76.2rem;
+    height: 0.2rem;
+    background-color: var(--white);
+}
+.collection-btn{
+    margin-top: -7rem;
+    padding: 4rem;
+    border: 0.1rem solid var(--white);
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    cursor: pointer;
+    position: relative;
+    z-index: 77;
+}
+.collection-arrow svg{
+    position: absolute;
+    width: 7.7rem;
+    height: 7.2rem;
+    left: 59rem;
+    bottom: -5rem;
+    z-index: 1;
+}
+.collection-btn span{
+    font-weight: 700;
+}
 
 
 
