@@ -27,9 +27,10 @@ var swiper = new Swiper('.new-season__slider', {
             loop: true,
           },
           320: {
-            slidesPerView: 'auto', 
-            spaceBetween: 20,
-            loop: false,
+            slidesPerView: 'auto',
+            spaceBetween: 30, 
+            initialSlide: 0, 
+            centerInsufficientSlides: true,
           },
       },
   });
@@ -37,9 +38,25 @@ var swiper = new Swiper('.new-season__slider', {
   document.addEventListener('DOMContentLoaded', function () {
     const hamburgerButton = document.querySelector('.hamburger');
     const headerMenu = document.querySelector('.header-menu');
+    const body = document.body;
+    const navLinks = document.querySelectorAll('.nav-list__link');
   
     hamburgerButton.addEventListener('click', function () {
-      headerMenu.classList.toggle('active'); 
+      headerMenu.classList.toggle('active');
       hamburgerButton.classList.toggle('active');
+  
+      if (body.style.overflow === 'hidden') {
+        body.style.overflow = 'auto'; 
+      } else {
+        body.style.overflow = 'hidden'; 
+      }
+    });
+  
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        headerMenu.classList.remove('active');
+        hamburgerButton.classList.remove('active');
+        body.style.overflow = 'auto'; 
+      });
     });
   });

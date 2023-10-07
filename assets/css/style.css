@@ -385,6 +385,9 @@ body{
     left: 0rem;
     width: 13rem !important;
 }
+.decor-text__collection.mob{
+    display: none;
+}
 .catalog-deco2{
     position: absolute;
     top: 13rem;
@@ -498,6 +501,9 @@ body{
 }
 .section-title-b span{
     font-weight: 600;
+}
+.opt-bg.mobile{
+    display: none;
 }
 .wrapper{
     overflow: hidden;
@@ -1217,7 +1223,20 @@ body{
 .cloud-main-mob{
     display: none;
 }
-
+.modal-dec1{
+    position: absolute;
+    bottom: 12rem;
+    left: 0;
+    width: 16.1rem;
+    height: 52.5rem;
+}
+.modal-dec2{
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    width: 12.7rem;
+    height: 27.7rem;
+}
 /* Modal end */
 
 @media (max-width: 1024px){
@@ -1233,6 +1252,12 @@ body{
   .slyle-right{
     display: none;
   }
+  .modal-dec1{
+    display: none;
+}
+.modal-dec2{
+    display: none;
+}
   .style-wrapper{
     grid-template-columns: repeat(1,1fr);
   }
@@ -1454,7 +1479,7 @@ body{
     }
     .header-menu{
         display: flex;
-        position: absolute;
+        position: fixed;
         min-height: 100vh;
         top: 0;
         left: 0;
@@ -1508,6 +1533,10 @@ body{
     .cart-btn img, .favor-btn img {
         width: 3rem;
         height: 3rem;
+    }
+    .catalog-btn__big.mobile{
+        display: block;
+        margin-top: 3.5rem;
     }
 }
 @media (max-width: 500px){
@@ -1583,6 +1612,13 @@ body{
         position: absolute;
         bottom: 1.5rem;
     }
+    .product-item{
+        height: 38.6rem;
+        z-index: 1;
+    }
+    .new-season__wrapper.container{
+        padding-right: 0;
+    }
     .style-wrapper{
         gap: 2.5rem;
     }
@@ -1634,10 +1670,6 @@ body{
     .arrow-btn{
         bottom: -1rem;
     }
-    .catalog-btn__big.mobile{
-        display: block;
-        margin-top: 3.5rem;
-    }
     .cata-dec1 {
         right: -11rem;
         top: -5rem;
@@ -1646,5 +1678,229 @@ body{
     }
     .index-catalog{
         padding-bottom: 3.5rem;
+    }
+    .section-title-b{
+        font-size: 3.2rem;
+    }
+    .opt {
+        padding: 4.5rem 0 5rem;
+    }
+    .opt-title{
+        text-align: center;
+    }
+    .opt-title .yel-span{
+        font-size: 3.1rem;
+    }
+    .big-span{
+        font-size: 4.6rem;
+    }
+    .txt-span{
+        font-size: 3.6rem;
+    }
+    .opt-inner {
+        gap: 2.5rem;
+    }
+    .advnatage-item{
+        font-size: 2.7rem;
+    }
+    .opt-bg{
+        display: none;
+    }
+    .opt-bg.mobile{
+        display: block;
+    }
+    .section-title-b {
+        margin-bottom: 3.5rem;
+    }
+    .opt-conditions__info{
+        font-size: 2.7rem;
+    }
+    .opt-cobditions__content{
+        padding: 2.3rem;
+    }
+    .opt-conditions{
+        padding-bottom: 6.4rem;
+    }
+    .opt-stages__item::before {
+        bottom: -4rem;
+        left: 50%;
+        transform: translateX(-50%) !important;
+        top: auto;
+        width: 1px;
+        height: 3.9rem;
+    }
+    .opt-stages{
+        padding-bottom: 5rem;
+    }
+    .section-suptitle.wh{
+        font-size: 2rem;
+    }
+    .section-title{
+        font-size: 3.2rem;
+    }
+    .about-top__img svg {
+        width: 5.7rem;
+        height: 4.7rem;
+    }
+    .about-us__text{
+        font-size: 2rem;
+    }
+    .about-us__top{
+        margin-bottom: 1.5rem;
+    }
+    .about-us__item:nth-child(1) svg {
+        width: 8.7rem;
+        height: 8.7rem;
+    }
+    .about-us__item:nth-child(2) svg {
+        width: 6.8rem;
+        height: 8.7rem;
+    }
+    .about-us__item:nth-child(3) svg {
+        width: 6.4rem;
+        height: 8.7rem;
+    }
+    .about-us__item-title{
+        font-size: 2.7rem;
+    }
+    .about-us__item-text{
+        font-size: 1.8rem;
+    }
+    .about-us__item{
+        height: 42rem;
+        padding: 3rem 2.6rem;
+    }
+    .about-us{
+        padding-bottom: 5.5rem;
+    }
+    .collection-title-y{
+        font-size: 5.3rem;
+        margin-top: 0;
+    }
+    .collection-title-w{
+        font-size: 5.3rem;
+        margin-top: 0;
+    }
+    .collection-title-y::before {
+        width: 15.5rem;
+        height: 0.1rem;
+    }
+    .collection-title-w::before {
+        width: 18.4rem;
+        height: 0.1rem;
+    }
+    .collection-btn{
+        padding: 1.36rem;
+        font-size: 1.4rem;
+    }
+    .decor-text__collection{
+        display: none;
+        bottom: 1rem;
+    }
+    .decor-text__collection.mob{
+        display: block;
+    }
+    .collection{
+        padding-bottom: 5.5rem;
+    }
+    .adavantages-inner-container{
+        gap: 3rem;
+    }
+    .adavantages-item.center {
+        margin: 3rem auto;
+        width: 100%;
+    }
+    .adavantages{
+        padding-bottom: 3rem;
+    }
+    .adavantages-item{
+        padding-bottom: 1.5rem;
+    }
+    .why-wrapper{
+        position: relative;
+        z-index: 7;
+    }
+    .why-title{
+        font-size: 2.7rem;
+    }
+    .why-item{
+        height: 30.7rem;
+    }
+    .why-item:nth-child(1) .why-block__img svg {
+        width: 8.6rem;
+        height: 8.6rem;
+    }
+    .why-item:nth-child(2) .why-block__img svg {
+        width: 8.1rem;
+        height: 8.6rem;
+    }
+    .why-item:nth-child(3) .why-block__img svg {
+        width: 8.6rem;
+        height: 8.6rem;
+    }
+    .why-item:nth-child(4) .why-block__img svg {
+        width: 9.7rem;
+        height: 8.6rem;
+    }
+    .why-item:nth-child(5) .why-block__img svg {
+        width: 6.5rem;
+        height: 8.6rem;
+    }
+    .why{
+        padding-bottom: 6.5rem;
+    }
+    .contacts-item{
+        height: 32.2rem;
+    }
+    .contacts-title{
+        font-size: 3rem;
+    }
+    .contact{
+        font-size: 1.8rem;
+    }
+    .contacts-descr{
+        font-size: 2.4rem;
+    }
+    .contacts-btn{
+        padding: 1.9rem 2.3rem;
+        font-size: 1.8rem;
+    }
+    .contacts{
+        padding-bottom: 9.9rem;
+    }
+    .logo.black img {
+        width: 7rem;
+        height: 6.8rem;
+    }
+    .logo.black{
+        align-items: flex-start;
+    }
+    .nav-list__link{
+        font-size: 2rem;
+    }
+    .header-info__tel a{
+        font-size: 2rem;
+    }
+    .cart-btn, .favor-btn {
+        width: 5rem;
+        height: 5rem;
+    }
+    .cart-btn img, .favor-btn img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .modal-content{
+        padding: 2rem;
+        width: 100%;
+    }
+    .modal-content h3{
+        padding-top: 2rem;
+        font-size: 4rem;
+    }
+    .application-modal{
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+    .swiper-slide{
+        width: 75%;
     }
 }
