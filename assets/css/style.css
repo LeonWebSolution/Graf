@@ -472,6 +472,10 @@ body{
     padding: 7.5rem 0;
     overflow: hidden;
 }
+.opt-wrapper{
+    position: relative;
+    z-index: 777;
+}
 .opt-bg{
     position: absolute;
     top: 0;
@@ -623,6 +627,8 @@ body{
 .opt-stages__inner{
     display: flex;
     gap: 3.66rem;
+    position: relative;
+    z-index: 7;
 }
 .opt-stages__item{
     width: 35.2rem;
@@ -692,11 +698,60 @@ body{
     bottom: 0.5rem;
     z-index: 11;
 }
+.opt-stages__item:first-child .opt-stages__item-img{
+    width: 17.9rem;
+    height: 13.7rem;
+}
+.opt-stages__item:nth-child(2) .opt-stages__item-img{
+    width: 15.4rem;
+    height: 11.1rem;
+}
+.opt-stages__item:nth-child(3) .opt-stages__item-img{
+    width: 9rem;
+    height: 11.4rem;
+}
+.opt-stages__item:nth-child(4) .opt-stages__item-img{
+    width: 12.6rem;
+    height: 12.6rem;
+}
 .stages-cloud{
    position: absolute;
-   bottom: -7rem;
+   bottom: -20rem;
    right: 0;
    z-index: 1;
+}
+.about-us{
+    position: relative;
+    background-color: #17171A;
+    padding-bottom: 10.5rem;
+}
+.about-us__top{
+    display: flex;
+    justify-content: space-between;
+}
+.title-block.wh{
+    color: var(--white);
+}
+.section-suptitle.wh{
+    color: var(--white);
+}
+.about-top__img svg{
+    width: 11.1rem;
+    height: 7.9108rem;
+}
+.about-us__top{
+    margin-bottom: 4rem;
+}
+.about-us__text{
+    color: var(--white);
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+.about-us__text span{
+    color: var(--yellow);
+}
+.med{
+    font-weight: 500;
 }
 
 
