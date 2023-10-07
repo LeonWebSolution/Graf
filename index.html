@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&family=Prata&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
     <link rel="stylesheet" href="./assets/css/nullstyle.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -17,42 +18,50 @@
                 <img src="./assets/images/logo.svg" alt="" class="logo-img">
                 <p>Graf</p>
             </a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-list__item">
-                        <a href="#" class="nav-list__link active">Главная</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#" class="nav-list__link">Каталог</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#" class="nav-list__link">О нас</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#contacts" class="nav-list__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-info">
-                <div class="header-info__tel">
-                    <a href="tel:79162591643">+7(916)259-16-43</a>
-                    <p>Свяжитесь с нами</p>
-                </div>
-                <div class="header-info__social">
-                    <button class="cart-btn">
-                        <img src="./assets/images/cart.svg" alt="#">
-                    </button>
-                    <button class="favor-btn">
-                        <img src="./assets/images/favor.svg" alt="#">
-                    </button>
+            <div class="header-menu">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link active">Главная</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">Каталог</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#" class="nav-list__link">О нас</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#contacts" class="nav-list__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-info">
+                    <div class="header-info__tel">
+                        <a href="tel:79162591643">+7(916)259-16-43</a>
+                        <p>Свяжитесь с нами</p>
+                    </div>
+                    <div class="header-info__social">
+                        <button class="cart-btn">
+                            <img src="./assets/images/cart.svg" alt="#">
+                        </button>
+                        <button class="favor-btn">
+                            <img src="./assets/images/favor.svg" alt="#">
+                        </button>
+                    </div>
                 </div>
             </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
         <mian class="main">
             <section class="main-section">
                 <img src="./assets/images/Clouds1.png" alt="" class="cloud-one">
                 <img src="./assets/images/line1.png" alt="" class="line-one">
                 <img src="./assets/images/Clouds-main.png" alt="" class="cloud-main">
+                <img src="./assets/images/cloud-main-mob.png" alt="" class="cloud-main-mob">
                 <div class="main-section__content container">
                     <div class="main-section__info">
                         <p class="main-suptitle">Интернет магазин //</p>
@@ -151,55 +160,66 @@
                         </div>
                         <button class="catalog-btn">Перейти <span>в каталог</span></button>
                     </div>
-                    <div class="new-season__slider">
-                        <div class="product-item">
-                            <div class="product-item__img">
-                                <img src="./assets/images/product1.jpg" alt="">
+                    <div class="swiper new-season__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-item">
+                                    <div class="product-item__img">
+                                        <img src="./assets/images/product1.jpg" alt="">
+                                    </div>
+                                    <div class="product-item__content">
+                                        <div class="product-item__info">
+                                            <div class="product-item__price">30000₽</div>
+                                            <h5 class="product-item__name">Мужской
+                                                <span>Костюм</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="product-item__content">
-                                <div class="product-item__info">
-                                    <div class="product-item__price">30000₽</div>
-                                    <h5 class="product-item__name">Мужской
-                                        <span>Костюм</span></h5>
+                            <div class="swiper-slide">
+                                <div class="product-item">
+                                    <div class="product-item__img">
+                                        <img src="./assets/images/product1.jpg" alt="">
+                                    </div>
+                                    <div class="product-item__content">
+                                        <div class="product-item__info">
+                                            <div class="product-item__price">30000₽</div>
+                                            <h5 class="product-item__name">Мужской
+                                                <span>Костюм</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-item">
+                                    <div class="product-item__img">
+                                        <img src="./assets/images/product1.jpg" alt="">
+                                    </div>
+                                    <div class="product-item__content">
+                                        <div class="product-item__info">
+                                            <div class="product-item__price">30000₽</div>
+                                            <h5 class="product-item__name">Мужской
+                                                <span>Костюм</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-item">
+                                    <div class="product-item__img">
+                                        <img src="./assets/images/product1.jpg" alt="">
+                                    </div>
+                                    <div class="product-item__content">
+                                        <div class="product-item__info">
+                                            <div class="product-item__price">30000₽</div>
+                                            <h5 class="product-item__name">Мужской
+                                                <span>Костюм</span></h5>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-item">
-                            <div class="product-item__img">
-                                <img src="./assets/images/product1.jpg" alt="">
-                            </div>
-                            <div class="product-item__content">
-                                <div class="product-item__info">
-                                    <div class="product-item__price">30000₽</div>
-                                    <h5 class="product-item__name">Мужской
-                                        <span>Костюм</span></h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <div class="product-item__img">
-                                <img src="./assets/images/product1.jpg" alt="">
-                            </div>
-                            <div class="product-item__content">
-                                <div class="product-item__info">
-                                    <div class="product-item__price">30000₽</div>
-                                    <h5 class="product-item__name">Мужской
-                                        <span>Костюм</span></h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <div class="product-item__img">
-                                <img src="./assets/images/product1.jpg" alt="">
-                            </div>
-                            <div class="product-item__content">
-                                <div class="product-item__info">
-                                    <div class="product-item__price">30000₽</div>
-                                    <h5 class="product-item__name">Мужской
-                                        <span>Костюм</span></h5>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="catalog-btn__big mobile">Перейти <span>в каталог</span></button>
                     </div>
                 </div>
             </section>
@@ -211,7 +231,7 @@
                         <h2 class="index-catalog__title">
                             <span class="text-stroke">Ощути</span> <br> на себе <span class="yellow-catalog__text">тепло</span> осеннеи новои <span class="text-stroke small">коллекции</span>
                         </h2>
-                        <button class="catalog-btn__big">Перейти <span>в каталог</span></button>
+                        <button class="catalog-btn__big desk mobile">Перейти <span>в каталог</span></button>
                         <div class="arrow-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                                 <path opacity="0.5" d="M0.421179 0.516504L79.2636 79.3589M79.2636 79.3589V26.3259M79.2636 79.3589H0.421179" stroke="#282525"/>
@@ -588,6 +608,7 @@
             </div>
         </div>
     </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
