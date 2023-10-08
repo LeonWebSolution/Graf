@@ -1372,6 +1372,12 @@ body{
   .style-wrapper{
     grid-template-columns: repeat(1,1fr);
   }
+  section {
+    overflow: hidden !important;
+  }
+  .why{
+    overflow: visible !important;
+  }
  .slyle-left{
     display: none;
  } 
@@ -1679,12 +1685,6 @@ body{
 @media (max-width: 500px){
   html{
     font-size: calc(100vw / 430 * 10);
-  }
-  section {
-    overflow: hidden !important;
-  }
-  .why{
-    overflow: visible !important;
   }
   .logo-img{
     width: 5rem;
