@@ -2578,4 +2578,7 @@ body{
     input, textarea, select {
         font-size: 1.6rem !important;
     }
+    .cart-section{
+        padding-right: 0;
+    }
 }
