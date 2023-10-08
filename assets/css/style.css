@@ -1446,6 +1446,9 @@ body{
     position: absolute;
     bottom: 3rem;
 }
+.product-item__descr-size.none{
+    opacity: 0.2;
+}
 .cart-buy{
     padding: 1.5rem 4rem;
     font-size: 2rem;
