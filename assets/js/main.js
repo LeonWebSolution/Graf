@@ -3,15 +3,18 @@ const modal = document.getElementById("application");
 const closeModalButton = document.getElementById("closeModal");
 const body = document.body;
 
-showModalButton.addEventListener("click", function () {
+if (showModalButton && modal && closeModalButton && body) {
+  showModalButton.addEventListener("click", function () {
     modal.style.display = "flex";
     body.style.overflow = "hidden";
-});
+  });
 
-closeModalButton.addEventListener("click", function () {
+  closeModalButton.addEventListener("click", function () {
     modal.style.display = "none";
     body.style.overflow = "auto";
-});
+  });
+} 
+
 
 var swiper = new Swiper('.new-season__slider', {
     slidesPerView: 4, 
