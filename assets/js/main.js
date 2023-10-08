@@ -63,3 +63,34 @@ var swiper = new Swiper('.new-season__slider', {
       });
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Находим все элементы с классами '.product-plus' и '.cart-del'
+    const plusButtons = document.querySelectorAll('.product-plus');
+    const cartDelButtons = document.querySelectorAll('.cart-del');
+    const productBtns = document.querySelectorAll('.product-btns');
+    const productCartBtns = document.querySelectorAll('.product-cart-btns');
+
+    // Добавляем обработчик события для каждой кнопки
+    plusButtons.forEach(function (plusButton, index) {
+        plusButton.addEventListener('click', function () {
+            // Добавляем класс "active" элементам с классами "product-btns" и "product-cart-btns"
+            productBtns[index].classList.add('active');
+            productCartBtns[index].classList.add('active');
+        });
+    });
+
+    cartDelButtons.forEach(function (cartDelButton, index) {
+        cartDelButton.addEventListener('click', function () {
+            // Удаляем класс "active" у элементов с классами "product-btns" и "product-cart-btns"
+            productBtns[index].classList.remove('active');
+            productCartBtns[index].classList.remove('active');
+        });
+    });
+});
+
+
+
+
+
+
