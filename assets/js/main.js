@@ -89,6 +89,28 @@ var swiper = new Swiper('.new-season__slider', {
     });
 });
 
+var cart = new Swiper('.cart-slider', {
+  slidesPerView: 4, 
+  spaceBetween: 30,
+  breakpoints: {
+      1025: {
+          slidesPerView: 4, 
+          spaceBetween: 20,
+      },
+      500: {
+          slidesPerView: 2, 
+          spaceBetween: 20,
+          loop: true,
+        },
+        200: {
+          slidesPerView: 'auto',
+          spaceBetween: 30, 
+          initialSlide: 0, 
+          centerInsufficientSlides: true,
+        },
+    },
+});
+
 
 
 
