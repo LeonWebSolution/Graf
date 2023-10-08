@@ -2575,4 +2575,7 @@ body{
     select{
         outline: none;
     }
+    input, textarea, select {
+        font-size: 1.6rem !important;
+    }
 }
