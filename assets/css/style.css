@@ -1398,7 +1398,7 @@ body{
     font-size: 8rem;
   }
   .main-section{
-    min-height: 100vh;
+    min-height: 100svh;
   }
   .main-title span{
     font-size: 4rem;
