@@ -1591,7 +1591,6 @@ body{
     .header-menu{
         display: flex;
         position: fixed;
-        min-height: 100vh;
         top: 0;
         left: 0;
         right: 0;
