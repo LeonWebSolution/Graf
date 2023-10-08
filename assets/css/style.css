@@ -1713,6 +1713,7 @@ body{
     padding-left: 5rem;
     }
     .main-title::after {
+        top: 3rem;
       left: -6rem;
       font-size: 5.5rem;
     }
