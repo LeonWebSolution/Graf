@@ -1683,6 +1683,190 @@ body{
 
 /* Cart end */
 
+/* Product start */
+
+.product-section{
+    padding-top: 20rem;
+}
+
+.contacts.white{
+    background-color: transparent;
+    box-shadow: 0;
+}
+.contacts.white .contacts-item{
+    box-shadow: none;
+    border: 1px solid var(--black);
+}
+.contacts.white .contacts-item.second{
+    border-left: none;
+}
+
+.contacts.white .contacts-descr{
+    color: var(--black);
+}
+.contacts.white .contacts-descr span{
+    color: var(--black);
+    font-weight: 600;
+}
+.contacts.white .contacts-btn{
+    box-shadow: none;
+    border: 0.1rem solid var(--black);
+    color: var(--black);
+}
+.breadcrambs{
+    margin-bottom: 3.5rem;
+    font-size: 2rem;
+    opacity: 0.5;
+    color: var(--black);
+}
+.breadcrambs a{
+    font-size: 2rem;
+    opacity: 0.5;
+    color: var(--black);
+}
+.last-bred{
+    font-weight: 500;
+}
+.product-item__wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 10.5rem;
+}
+.product-item__slider{
+    width: 70rem;
+    height: 57.5rem;
+}
+.slider{
+    width: 70.1rem;
+    height: 53.5rem;
+    margin-bottom: 2.5rem;
+}
+.slick-slide.slick-current img{
+    opacity: 1;
+}
+.big-slide img{
+    width: 70.1rem;
+    height: 53.5rem;
+    object-fit: cover;
+}
+.small-slide img{
+    width: auto;
+    height: 10.7rem;
+    opacity: 0.5;
+}
+.thumbnails{
+    width: 70.1rem;
+    height: 10.7rem;
+}
+.product-item__descr{
+    width: 70.5rem;
+}
+.product-item__descr-title{
+    font-size: 7.5rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 2rem;
+}
+.product-item__descr-title span{
+    font-weight: 700;
+}
+.product-item__descr-price{
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 3.5rem;
+}
+.product-item__descr-colors-title{
+    font-size: 3.2rem;
+    color: var(--black);
+    opacity: 0.5;
+    margin-bottom: 1.5rem;
+}
+.product-item__descr-colors-wrapper{
+    display: flex;
+    gap: 2.5rem;
+}
+.product-item__descr-color{
+    width: 5rem;
+    height: 5rem;
+    background-color: #38373F;
+    cursor: pointer;
+}
+.product-item__descr-colors{
+    margin-bottom: 3.5rem;
+}
+.product-item__descr-sizes-title{
+    font-size: 3.2rem;
+    color: var(--black);
+    opacity: 0.5;
+    margin-bottom: 1.5rem;
+}
+.sizes-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-item__descr-size{
+    width: 12.3rem;
+    height: 5.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    border: 1px solid var(--black);
+    cursor: pointer;
+}
+.sizes-wrapper{
+    margin-bottom: 4.5rem;
+}
+.product-item__descr-btns{
+    display: flex;
+    justify-content: space-between;
+}
+.product-section{
+    margin-bottom: 10.5rem;
+}
+.cart-add__btn{
+   width: 33.1rem;
+   height: 7.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+   text-transform: uppercase;
+   border: 1px solid var(--black);
+   margin-bottom: 2.5rem;
+}
+.cart-add__btn span{
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+.cart-add__btn.yellow{
+    background-color: var(--yellow);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+}
+.contacts.white{
+    position: relative;
+    z-index: 777;
+}
+.contacts-btn{
+    cursor: pointer;
+}
+.big-product img{
+    width: 100%;
+    height: 52.5rem;
+    object-fit: cover;
+}
+.gallery-top{
+    margin-bottom: 2.5rem;
+}
+
+
+
+/* Product end */
+
 @media (max-width: 1024px){
   html{
     font-size: calc(100vw / 768 * 10);
@@ -2078,6 +2262,36 @@ body{
     .offer{
         padding-bottom: 10rem;
     }
+    .product-item__wrapper{
+        flex-direction: column;
+    }
+    .product-item__descr{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .product-section{
+        margin-top: 15rem;
+    }
+    .product-item__descr-title{
+        font-size: 5.5rem;
+    }
+    .product-item__descr-price{
+        margin-bottom: 2rem;
+    }
+    .contacts.white .contacts-item.second {
+        border-left: 1px solid var(--black);
+    }
+    .contacts.white .contacts-item {
+        box-shadow: none;
+        border: 1px solid var(--black);
+    }
+    .product-new__slider .catalog-btn__big.mobile{
+        font-size: 2.5rem;
+    }
+    .product-item__slider{
+        width: 100%;
+    }
+
 }
 @media (max-width: 500px){
   html{
@@ -2212,6 +2426,8 @@ body{
     }
     .news-season{
         padding-bottom: 5rem;
+        position: relative;
+        z-index: 777;
     }
     .catalog-btn__big{
         padding: 2.1rem;
@@ -2580,5 +2796,83 @@ body{
     }
     .cart-section{
         padding-right: 0;
+    }
+    .product-item__slider{
+        height: 30rem;
+    }
+    .product-item__wrapper{
+        width: 100%;
+    }
+    .big-slide{
+        width: 100%;
+    }
+    .thumbnails{
+        width: 100%;
+    }
+    .slider{
+        width: 100%;
+        height: 30rem;
+    }
+    .small-slide img{
+        height: 5.5rem;
+    }
+    .big-slide img{
+        width: 100%;
+        height: 30rem;
+    }
+    .breadcrambs{
+        font-size: 1.2rem;
+        margin-bottom: 2.5rem;
+    }
+    .product-item__wrapper{
+        gap: 6rem;
+    }
+    .product-item__descr-title{
+        font-size: 3.9rem;
+    }
+    .product-item__descr-price{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .product-item__descr-colors-title{
+        font-size: 1.7rem;
+    }
+    .product-item__descr-color{
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .product-item__descr-colors{
+        margin-bottom: 1.8rem;
+    }
+    .product-item__descr-sizes-title{
+        font-size: 1.7rem;
+    }
+    .product-item__descr-size{
+        width: 6.4rem;
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+    .sizes-wrapper{
+        margin-bottom: 2.3rem;
+    }
+    .cart-add__btn{
+       width: 18.2rem;
+       height: 4.8rem;
+       font-size: 1.3rem;
+    }
+    .product-item__descr-btn p{
+        font-size: 1.1rem;
+    }
+    .cart-add__btn{
+        margin-bottom: 1rem;
+    }
+    .product-section{
+        margin-bottom: 6.5rem;
+    }
+    .product-new__slider .catalog-btn__big.mobile{
+        margin-right: 5rem;
+    }
+    .contacts-item{
+        padding: 2rem 1.5rem;
     }
 }

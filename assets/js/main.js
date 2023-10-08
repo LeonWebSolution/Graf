@@ -13,7 +13,8 @@ if (showModalButton && modal && closeModalButton && body) {
     modal.style.display = "none";
     body.style.overflow = "auto";
   });
-} 
+}
+
 
 
 var swiper = new Swiper('.new-season__slider', {
@@ -110,6 +111,8 @@ var cart = new Swiper('.cart-slider', {
         },
     },
 });
+
+
 
 
 
