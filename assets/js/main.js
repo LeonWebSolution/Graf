@@ -29,7 +29,7 @@ var swiper = new Swiper('.new-season__slider', {
             spaceBetween: 20,
             loop: true,
           },
-          320: {
+          200: {
             slidesPerView: 'auto',
             spaceBetween: 30, 
             initialSlide: 0, 
