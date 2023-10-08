@@ -2878,4 +2878,7 @@ body{
     .breadcrambs a{
         font-size: 1.2rem;
     }
+    .contacts.white .contacts-item.second{
+        border-top: none;
+    }
 }
