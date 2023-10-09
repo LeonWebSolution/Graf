@@ -73,6 +73,9 @@ body{
     flex: 1;
     text-align: center;
 }
+.decorr-img-main{
+    display: none;
+}
 .nav-list{
     display: flex;
     gap: 10rem;
@@ -2896,5 +2899,13 @@ body{
     }
     .contacts.white .contacts-item.second{
         border-top: none;
+    }
+    .decorr-img-main{
+        display: block;
+        position: absolute;
+        right: -2rem;
+        top: 35rem;
+        width: 17.5rem;
+        height: 10.6rem;
     }
 }
