@@ -1,3 +1,6 @@
-.main-suptitle {
-   padding-top: 20rem;
+
+@media (max-width: 500px){
+    .main-suptitle {
+        padding-top: 20rem;
+    }
 }
