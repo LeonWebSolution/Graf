@@ -450,7 +450,7 @@ body{
     font-weight: 700;
     color: white !important;
     -webkit-text-stroke: 2px black;
-    text-stroke: 2px black;
+    /* font-family: 'Fira Sans', sans-serif; */
 }
 .small{
     font-size: 6.4rem;
@@ -736,6 +736,19 @@ body{
     position: relative;
     background-color: var(--bg);
     padding-bottom: 10.5rem;
+}
+.decor-img__main-img2{
+    display: none;
+}
+.collection-title{
+    position: relative;
+}
+.star-absolut{
+    position: absolute;
+    top: -5rem;
+    left: -15rem;
+    width: 12.2rem;
+    height: 11.8rem;
 }
 .about-cloud{
     position: absolute;
@@ -1189,6 +1202,11 @@ body{
     width:67.3rem;
     position: relative;
 }
+.dec-cube{
+    position: absolute;
+    left: 0;
+    top: 40rem;
+}
 .close {
     position: absolute;
     top: 1rem;
@@ -1312,6 +1330,9 @@ body{
     left: 0;
     width: 100%;
     background-size: cover;
+}
+.decor-img__main-img-right1{
+    display: none;
 }
 .policy-cloud2{
     position: absolute;
@@ -1874,11 +1895,18 @@ body{
 
 
 
+
 /* Product end */
 
 @media (max-width: 1024px){
   html{
     font-size: calc(100vw / 768 * 10);
+  }
+  .dec-cube{
+    display: none;
+  }
+  .star-absolut{
+    display: none;
   }
   .container{
     padding: 0 3rem;
@@ -2907,5 +2935,38 @@ body{
         top: 35rem;
         width: 17.5rem;
         height: 10.6rem;
+    }
+    .style{
+        width: 100%;
+    }
+    .slyle-left{
+        display: flex;
+        left: 0;
+        top: 5rem;
+        gap: 2.5rem;
+    }
+    .slyle-right{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 5rem;
+        right: 0;
+        left: auto;
+        gap: 2.5rem;
+    }
+    .decor-img__main-img2{
+        display: block;
+        opacity: 0.5;
+        width: 1.5rem !important;
+        height: 20.9rem !important;
+    }
+    .decor-style{
+        display: none;
+    }
+    .decor-img__main-img-right1{
+        display: block;
+        opacity: 0.5;
+        width: 1.5rem !important;
+        height: 20.9rem !important;
     }
 }
