@@ -439,6 +439,13 @@ body{
     font-size: 18.1rem;
     line-height: 100%;
 }
+.footer-list-ip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 .cata-dec1{
     position: absolute;
     right: 0;
@@ -2968,5 +2975,15 @@ body{
         opacity: 0.5;
         width: 1.5rem !important;
         height: 20.9rem !important;
+    }
+    .footer-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .footer-nav__list{
+        justify-content: center;
+        align-items: center;
     }
 }
